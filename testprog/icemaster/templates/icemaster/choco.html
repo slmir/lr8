@@ -1,0 +1,27 @@
+{% extends 'icemaster/icecream_base.html' %}
+
+{% block title %}
+Шоколадное
+{% endblock %}
+
+{% block image %}
+{% load static %}
+<img src="{% static 'icemaster/choco.jpg' %}"  width="600" height="394">
+{% endblock %}
+
+{% block content %}
+<TABLE border=3 align="center">
+      <TR><TH rowspan=7><TH colspan=2>
+      <TR><TH>Сорт<TD>Мороженое шоколадное на основе натурального какао
+      <TR><TH>Полное наименование<TD>Пищевой замороженный продукт-десерт со вкусом "Шоколада"
+      <TR><TH>Состав<TD>Сыворотка молочная восстановленная, молочный напиток, шоколадный соус, заменитель молочного жира, стабилизаторы, молоко сухое обезжиренное
+      <TR><TH>Поставщик<TD><b>ООО "Шоколадки"</b>
+      <TR><TH>Цена<TD><b>560 руб./кг</b>
+      <TR><TH>Артикул<TD>#МШ0F0FF1
+</TABLE>
+{% endblock %}
+
+{% block tomain %}
+<p align = "middle" class = "my-0 me-md-auto fw-normal p-2 text-white bg-dark align-items-center"><a href="{% url 'home' %}"><font color="white"><big>Главная</big></font></a></p>
+{% endblock %}
+

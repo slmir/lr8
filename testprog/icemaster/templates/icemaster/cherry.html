@@ -1,0 +1,27 @@
+{% extends 'icemaster/icecream_base.html' %}
+
+{% block title %}
+Клубничное
+{% endblock %}
+
+{% block image %}
+{% load static %}
+<img src="{% static 'icemaster/cherry.jpg' %}"  width="600" height="394">
+
+{% endblock %}
+
+{% block content %}
+<TABLE border=3 align="center">
+      <TR><TH rowspan=7><TH colspan=2>
+      <TR><TH>Сорт<TD>Мороженое клубничное на основе натуральных ягод
+      <TR><TH>Полное наименование<TD>Пищевой замороженный продукт-десерт со вкусом "Клубника"
+      <TR><TH>Состав<TD>Ягоды клубники, сыворотка молочная восстановленная, молочный напиток, клубничный соус, заменитель молочного жира, стабилизаторы, молоко сухое обезжиренное
+      <TR><TH>Поставщик<TD><b>ООО "Ягоды-клубнички"</b>
+      <TR><TH>Цена<TD><b>670 руб./кг</b>
+      <TR><TH>Артикул<TD>#МК0F0FF2
+</TABLE>
+{% endblock %}
+
+{% block tomain %}
+<p align = "middle" class = "my-0 me-md-auto fw-normal p-2 text-white bg-dark align-items-center"><a href="{% url 'home' %}"><font color="white"><big>Главная</big></font></a></p>
+{% endblock %}
